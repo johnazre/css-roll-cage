@@ -1,0 +1,73 @@
+nav: roll(class='jc-around ai-center')
+    cage(cols='xs-9 sm-10 md-6 lg-6 xl-6')
+      h3#logo.ml15 rocksynth 
+        span presents
+      
+    cage(cols='xs-3 sm-2 md-0 lg-0 xl-0'
+    class='jc-center xs-sm_jc-end')
+      img#hamb(src='https://goo.gl/tzT9vj'
+      class='mr15' onclick='showNav')
+      
+    cage(cols='xs-0 sm-0 md-6 lg-6 xl-6' class='jc-end')
+      ul(class='li-inline li-mr15')
+        li intro
+        li guide
+        li notes
+        li author
+
+header: roll(class='jc-center')
+  cage(cols='all-12' class='jc-center')
+    #briefing
+      h1#bigRC ROLL CAGE
+      h4 BEAUTIFUL & RESPONSIVE
+        
+roll(class='jc-center mt75 wrap' id='introduction')
+  
+  
+  cage(cols='all-8' class='wrap jc-center')
+    h2 ROLL CAGE #[span.ghost IS A GRID SYSTEM]
+    p.big A grid system that aims to provide the user with simple and elegant syntax while also offering an unpresidented amount of functionality through logical width application and the power of flexbox.
+
+roll(class='jc-around' id='display-one')
+  p test.
+ 
+roll(class='jc-center wrap')
+  cage(cols='all-8' class='wrap jc-center')
+    p.mt50 Roll Cage is a hybrid grid, utilizing both JavaScript #[em and] CSS to do awesome things with less keystrokes. If this sounds like your cup of tea, let us look at a few examples of what sets Roll Cage apart from the crowd. 
+  
+    code
+      p.code.no-margin= '<roll class=\'jc-\'around\'>'
+      p.code.no-margin= '  <cage cols=\'12 10 6 4 3\'>'
+      p.code.no-margin= '<\\roll>'
+      //- p.code.no-margin= '<roll>'
+    
+    p We use custom elements to save ourselves from a terrifying abyss of divs and over-the-top class stuffing. Our #[strong roll elements are rows] and #[strong our cage elements are columns].
+
+    p.follower-text With a little bit of JavaScript magic, Roll Cage inspects the #[strong [width]] attribute of each element cage on the page and applies appropriate width values. CSS then takes the liberty of making sure those widths are enforced on variable screen sizes. #[a(onclick='showFullDetail' href='#') Wanna learn more about how it works?]
+    
+    
+roll(class='jc-center wrap')
+  cage(cols='all-8' class='wrap jc-center')
+    h2.full.mt75 Here's how you use it.
+    
+    h4.mt50.text-left Plug it in. #[span.ghost One CSS file, one JS file.]     
+    code
+      p.code.no-margin= '<head>'
+      p.code.no-margin= '<link rel=\'stylesheet\' href=\'path/to/rollcage.css\'/>'
+      p.code.no-margin= '...'
+      p.code.no-margin= '<script src=\'path/to/rollcage.js\'></script>'
+      p.code.no-margin= '</body>'
+  
+    h4.mt50.text-left Start it up. #[span.ghost Create some rolls and cages.]     
+    code
+      p.code.no-margin= '<roll class=\'jc-around\'>'
+      p.code.no-margin= '  <cage cols=\'12 6 3 1 8\'>'
+      p.code.no-margin= '    <!-- content -->'
+      p.code.no-margin= '  </cage>'
+      p.code.no-margin= '</roll>'
+      
+    h4.mt50.text-left Watch Friends reruns. #[span.ghost Because why not?.]   
+    code
+      p.code.no-margin= 'npm install --burn-dvd Friends_SE1'
+       
+.mb100

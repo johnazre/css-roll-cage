@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>RollCage</title>
+    
+    
+    <link rel="stylesheet" href="css/normalize.css">
+
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    
+<nav>
+  <roll class="jc-around ai-center">
+    <cage cols="xs-9 sm-10 md-6 lg-6 xl-6">
+      <h3 id="logo" class="ml15">rocksynth <span>presents</span></h3>
+    </cage>
+    <cage cols="xs-3 sm-2 md-0 lg-0 xl-0" class="jc-center xs-sm_jc-end"><img id="hamb" src="https://goo.gl/tzT9vj" onclick="showNav" class="mr15"/></cage>
+    <cage cols="xs-0 sm-0 md-6 lg-6 xl-6" class="jc-end">
+      <ul class="li-inline li-mr15">
+        <li>intro</li>
+        <li>guide</li>
+        <li>notes</li>
+        <li>author</li>
+      </ul>
+    </cage>
+  </roll>
+</nav>
+<header>
+  <roll class="jc-center">
+    <cage cols="all-12" class="jc-center">
+      <div id="briefing">
+        <h1 id="bigRC">ROLL CAGE</h1>
+        <h4>BEAUTIFUL & RESPONSIVE</h4>
+      </div>
+    </cage>
+  </roll>
+</header>
+<roll id="introduction" class="jc-center mt75 wrap">
+  <cage cols="all-8" class="wrap jc-center">
+    <h2>ROLL CAGE <span class="ghost">IS A GRID SYSTEM</span></h2>
+    <p class="big">A grid system that aims to provide the user with simple and elegant syntax while also offering an unpresidented amount of functionality through logical width application and the power of flexbox.</p>
+  </cage>
+</roll>
+<roll id="display-one" class="jc-around">
+  <p>test.</p>
+</roll>
+<roll class="jc-center wrap">
+  <cage cols="all-8" class="wrap jc-center">
+    <p class="mt50">Roll Cage is a hybrid grid, utilizing both JavaScript <em>and</em> CSS to do awesome things with less keystrokes. If this sounds like your cup of tea, let us look at a few examples of what sets Roll Cage apart from the crowd. </p><code>
+      <p class="code no-margin">&lt;roll class='jc-'around'&gt;</p>
+      <p class="code no-margin">  &lt;cage cols='12 10 6 4 3'&gt;</p>
+      <p class="code no-margin">&lt;\roll&gt;</p></code>
+    <p>We use custom elements to save ourselves from a terrifying abyss of divs and over-the-top class stuffing. Our <strong>roll elements are rows</strong> and <strong>our cage elements are columns</strong>.</p>
+    <p class="follower-text">With a little bit of JavaScript magic, Roll Cage inspects the <strong>[width]</strong> attribute of each element cage on the page and applies appropriate width values. CSS then takes the liberty of making sure those widths are enforced on variable screen sizes. <a onclick="showFullDetail" href="#">Wanna learn more about how it works?</a></p>
+  </cage>
+</roll>
+<roll class="jc-center wrap">
+  <cage cols="all-8" class="wrap jc-center">
+    <h2 class="full mt75">Here's how you use it.</h2>
+    <h4 class="mt50 text-left">Plug it in. <span class="ghost">One CSS file, one JS file.</span>     </h4><code>
+      <p class="code no-margin">&lt;head&gt;</p>
+      <p class="code no-margin">&lt;link rel='stylesheet' href='path/to/rollcage.css'/&gt;</p>
+      <p class="code no-margin">...</p>
+      <p class="code no-margin">&lt;script src='path/to/rollcage.js'&gt;&lt;/script&gt;</p>
+      <p class="code no-margin">&lt;/body&gt;</p></code>
+    <h4 class="mt50 text-left">Start it up. <span class="ghost">Create some rolls and cages.</span>     </h4><code>
+      <p class="code no-margin">&lt;roll class='jc-around'&gt;</p>
+      <p class="code no-margin">  &lt;cage cols='12 6 3 1 8'&gt;</p>
+      <p class="code no-margin">    &lt;!-- content --&gt;</p>
+      <p class="code no-margin">  &lt;/cage&gt;</p>
+      <p class="code no-margin">&lt;/roll&gt;</p></code>
+    <h4 class="mt50 text-left">Watch Friends reruns. <span class="ghost">Because why not?.</span>   </h4><code>
+      <p class="code no-margin">npm install --burn-dvd Friends_SE1</p></code>
+  </cage>
+</roll>
+<div class="mb100"></div>
+    
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
